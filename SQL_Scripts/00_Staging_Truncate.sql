@@ -1,0 +1,20 @@
+/* ETL INFRASTRUCTURE - FASE 0: LIMPIEZA DE STAGING
+Descripción: Truncamiento de todas las tablas de staging previo a la ingesta.
+*/
+
+USE [bd_staging_sales];
+GO
+
+TRUNCATE TABLE [dbo].[stg_CLIENTE_MAYORISTA];
+TRUNCATE TABLE [dbo].[stg_CLIENTE_MINORISTA];
+TRUNCATE TABLE [dbo].[stg_EMPLEADOS];
+TRUNCATE TABLE [dbo].[stg_HOLYDAY];
+TRUNCATE TABLE [dbo].[stg_MYSQL_BILLING_DETAIL];
+TRUNCATE TABLE [dbo].[stg_MYSQL_BILLING];
+TRUNCATE TABLE [dbo].[stg_MYSQL_DESCUENTOS];
+TRUNCATE TABLE [dbo].[stg_MYSQL_PRICE];
+TRUNCATE TABLE [dbo].[stg_PRODUCTOS];
+TRUNCATE TABLE [dbo].[stg_REGIONES];
+TRUNCATE TABLE [dbo].[stg_SQL_BILLING];
+TRUNCATE TABLE [dbo].[stg_STOCK];
+GO

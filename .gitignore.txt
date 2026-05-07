@@ -1,0 +1,9 @@
+# SQL Server Integration Services (SSIS)
+*.dtproj.user
+*.suo
+*.user
+bin/
+obj/
+*.database
+*.log
+*.tmp
