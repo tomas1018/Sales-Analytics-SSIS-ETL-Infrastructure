@@ -24,8 +24,9 @@ Desarrollo de un sistema ETL robusto que integra fuentes de datos heterogéneas 
 4. `08_Post_Carga_Optimizacion`: Restauración de integridad y creación de índices de cobertura para Power BI.
 
 ### 🚀 Configuración y Uso
-1. **Preparación:** Ejecute los scripts SQL del `00` al `05` para crear la estructura de las bases de datos.
+1. **Previo** descomprima la carpeta `Data_Source` dentro de la carpeta raiz.
 2. **Apertura:** Abra la solución `Sales-Analytics-SSIS-ETL-Infrastructure.sln` en Visual Studio (SSDT).
-3. **Parametrización:** - Diríjase al panel de **Variables** del paquete `Package.dtsx`.
+3. **Preparación:** Ejecute los scripts SQL del `00` al `05` para crear la estructura de las bases de datos (desde la sql task).
+4. **Parametrización:** - Diríjase al panel de **Variables** del paquete `Package.dtsx`.
    - Actualice los valores de `InstanciaServidor`, `CarpetaArchivos` (ruta de las carpetas de datos) y `CarpetaManejoErrores`.
-4. **Ejecución:** Inicie el proceso. El sistema automatizado se encargará de la limpieza, el mantenimiento de índices y la carga final de datos.
+5. **Ejecución:** Inicie el proceso. El sistema automatizado se encargará de la limpieza, el mantenimiento de índices y la carga final de datos.
